@@ -1,0 +1,22 @@
+{
+  "name": "nutridata-sisvan",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dashboard de análise de dados públicos do SISVAN",
+  "main": "server.cjs",
+  "scripts": {
+    "start": "npm run build && node server.cjs",
+    "dev": "concurrently -k \"node --watch server.cjs --dev\" \"vite --host 127.0.0.1\"",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "concurrently": "^10.0.6",
+    "vite": "^8.3.5"
+  }
+}
